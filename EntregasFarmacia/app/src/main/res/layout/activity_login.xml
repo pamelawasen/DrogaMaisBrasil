@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:background="@color/colorbranca"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:context=".LoginActivity">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="378dp"
+            android:layout_height="267dp"
+            android:id="@+id/linearLayout" android:layout_marginTop="320dp" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="27dp" android:layout_marginStart="27dp" android:layout_marginEnd="27dp"
+            android:layout_marginRight="27dp" app:layout_constraintHorizontal_bias="0.523">
+        <EditText
+                android:id="@+id/editID"
+                android:layout_gravity="center"
+                android:layout_width="279dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:hint="Digite seu ID"
+                android:textColorHint="@color/colorPrimary"
+                android:textColorLink="@color/colorbranca"
+                style="@style/Base.Widget.MaterialComponents.TextInputEditText"/>
+        <EditText
+                android:id="@+id/editPassword"
+                android:layout_gravity="center"
+                android:layout_width="279dp"
+                android:layout_marginTop="15dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:hint="Digite sua Senha "
+                android:textColorHint="@color/colorPrimary"
+                android:textColorLink="@color/colorbranca"
+                style="@style/Base.Widget.MaterialComponents.TextInputEditText"/>
+        <Button
+                android:id="@+id/btnEntrar"
+                android:text="Entrar"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:layout_width="191dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorbranca"
+                android:background="@drawable/corbutton"
+                style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"/>
+    </LinearLayout>
+    <ImageView
+            android:layout_width="185dp"
+            android:layout_height="157dp" app:srcCompat="@drawable/remedio"
+            android:id="@+id/imageView4" android:layout_marginBottom="24dp"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    <TextView
+            android:id="@+id/textView2"
+            android:text="Droga Mais Brasil"
+            android:textColor="@color/colorPrimary"
+            android:layout_width="199dp"
+            android:gravity="center"
+            android:layout_height="0dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" android:layout_marginBottom="36dp"
+            app:layout_constraintBottom_toTopOf="@+id/imageView4" android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginRight="8dp" android:textSize="24sp"/>
+</android.support.constraint.ConstraintLayout>

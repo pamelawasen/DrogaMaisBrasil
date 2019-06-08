@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/AppTheme.PopupOverlay"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_main" android:id="@+id/include2" android:layout_height="678dp"/>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="110dp" app:layout_anchorGravity="top|center"
+            app:layout_anchor="@+id/include2">
+        <Button
+                android:id="@+id/btnPend"
+                android:text="Pendentes"
+                android:layout_gravity="center|bottom"
+                android:textColor="@color/colorText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                style="@android:style/Widget.Material.Light.Button.Borderless.Colored"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+        <Button
+                android:id="@+id/btnFim"
+                android:text="Finalizadas"
+                android:layout_gravity="center|bottom"
+                android:layout_width="wrap_content"
+                android:textColor="@color/colorText"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                style="@android:style/Widget.Material.Button.Borderless.Colored"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>
